@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        GHASH
+    </title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body class="grey lighten-2" style="background:url('images/background.jpeg') center/cover no-repeat">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.parallax').parallax();
+            $('.collapsible').collapsible();
+            $('.slider').slider();
+        });
+    </script>
+
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large pulse teal darken-3">
+            <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+            <li class="waves-effect waves-light"><a href="index.html"><i class="material-icons">home</i></a></li>
+            <li class="waves-effect waves-light"><a href="download.html"><i class="material-icons">file_download</i></a></li>
+            <li class="waves-effect waves-light"><a href="privacy.html"><i class="material-icons">error</i></a></li>
+            <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">fingerprint</i></a></li>
+            <li class="waves-effect waves-light"><a href="contact.html"><i class="material-icons">contact_phone</i></a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card-panel z-depth-5 hoverable black" style="background:url('images/hacking.jpeg')">
+                <span class="white-text">
+                    <h3 style="text-align:center"><code>GHASH</code></h3>    
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <div class="card hoverable z-depth-5">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/signup2.jpeg">
+                </div>
+                <div class="card-content black" style="background:url('images/hacking.jpeg');text-align:center">
+                    <span class="card-title activator white-text text-darken-4">Sign Up<i class="material-icons waves-effect right">more_vert</i></span>
+                    <p class="white-text text-darken-4">Not Secure Yet ? Create Account And Take First Step Towards Better Security</p>
+                </div>
+                <div class="card-reveal black">
+                    <span class="card-title white-text text-lighten-4">Sign Up<i class="material-icons right">close</i></span>
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <input id="full_name" type="text" class="validate ">
+                            <label for="full_name">Full Name</label>
+                        </div>
+                        <div class="input-field col s12 white-text">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email Id</label>
+                        </div>
+                        <div class="input-field col s12 white-text">
+                            <input id="phone" type="number" class="validate">
+                            <label for="phone">Contact Number</label>
+                        </div>
+                        <div class="input-field col s12 white-text">
+                            <input id="pass" type="password" class="validate">
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="input-field col s12 white-text">
+                            <input id="pass1" type="password" equalTo="#pass" class="validate">
+                            <label for="pass1">Confirm Password</label>
+                        </div>
+                        <button class="btn-floating btn-large pulse btn waves-effect waves-light" type="submit" name="action">
+                            <i class="material-icons right">send</i>
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card z-depth-5 hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/signin2.jpeg">
+                </div>
+                <div class="card-content black" style="background:url('images/hacking2.jpeg');text-align:center">
+                    <span class="card-title activator white-text text-darken-4 ">Sign In<i class="material-icons waves-effect right">more_vert</i></span>
+                    <p class=" white-text text-darken-4">Oh ! Good Decision , You Are Completely Secure , Please Sign In and Access Your Account</p>
+                </div>
+                <div class="card-reveal black">
+                    <span class="card-title white-text text-darken-4">Sign In<i class="material-icons right">close</i></span>
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <input id="full_name" type="text" class="validate ">
+                            <label for="full_name">Full Name</label>
+                        </div>
+                        <div class="input-field col s12 white-text">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email Id</label>
+                        </div>
+                        <div class="input-field col s12 white-text">
+                            <input id="pass" type="password" class="validate">
+                            <label for="pass">Password</label>
+                        </div>
+                        <button class="btn-floating btn-large pulse btn waves-effect waves-light" type="submit" name="action">
+                            <i class="material-icons right">send</i>
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s8">
+            <div class="card-panel waves-effect z-depth-5  hoverable teal">
+                <span class="white-text z-depth-5 orange darken-1" style="font-size:22px">Your security on web is one of the most important concerns . Recent security breaches have only proved 
+                    that how vulnerable internet users are . The first step to secure yourself is creating the best possible passwords which are
+                    highly secure as well as use good amount of combinations .
+            </span>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card-panel waves-effect z-depth-5  hoverable black">
+                <span class="white-text z-depth-5 red" style="font-size:22px">Here's where <code>GHASH</code> steps in . <code>GHASH</code> helps in generating almost non-crackable passwords which feature high security .
+                </span>
+            </div>
+        </div>
+        <div class="col s12">
+            <div class="card-panel z-depth-5  hoverable orange">
+                <span class="white-text black z-depth-5" style="font-size:22px"><code>GHASH</code> has various features :
+                    </span>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="card-panel z-depth-5  hoverable purple darken-2">
+                <span class="white-text black z-depth-5" style="font-size:22px">1. Generates Passwords
+                        </span>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="card-panel z-depth-5  hoverable indigo darken-2">
+                <span class="white-text black z-depth-5" style="font-size:22px">2. Manages Accounts
+                            </span>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="card-panel  z-depth-5  hoverable blue darken-2">
+                <span class="white-text black z-depth-5" style="font-size:22px">3. Manages Passwords
+                            </span>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="card-panel  z-depth-5  hoverable green darken-2">
+                <span class="white-text black z-depth-5" style="font-size:22px">4. Many Types Of Passwords
+                            </span>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="card-panel  z-depth-5  hoverable yellow darken-2">
+                <span class="white-text black z-depth-5" style="font-size:22px">5. Integrated<br> API's
+                                </span>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="card-panel z-depth-5  hoverable orange darken-2">
+                <span class="white-text black z-depth-5" style="font-size:22px">6. Mobile <br>Support
+                                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header waves-effect z-depth-5 blue lighten-2 white-text active"><i class="material-icons">build</i>Secure</div>
+                    <div class="collapsible-body white-text"><span>All the data you share is transferred via a secure set of networking protocols</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header waves-effect z-depth-5 blue lighten-2 white-text"><i class="material-icons">assessment</i>Easy To Use</div>
+                    <div class="collapsible-body z-depth-5 white-text"><span>The software is easy to to use and manage</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header waves-effect z-depth-5 blue lighten-2 white-text"><i class="material-icons">devices_other</i>Universally Compatible</div>
+                    <div class="collapsible-body z-depth-5 white-text"><span>Compatible on any platform , Windows , Linux or MacOS</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="slider z-depth-5 hoverable" style="background-color:black">
+                <ul class="slides">
+                    <li>
+                        <img src="images/slider1.jpeg">
+                        <div class="caption center-align">
+                            <h3>Be Secure , Be Safe </h3>
+                            <h5 class="light grey-text text-lighten-3">Your Safety Is Our Priority.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/slider2.jpg">
+                        <div class="caption left-align">
+                            <h3>Be Casual</h3>
+                            <h5 class="light grey-text text-lighten-3">Your Cyber Security Is Our Responsibility.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/slider3.jpg">
+                        <div class="caption right-align">
+                            <h3>Don't Remember</h3>
+                            <h5 class="light grey-text text-lighten-3">Your Passwords Are Synced To Our Application . So , No Worries You Can Flaunt Your Forgetful Nature .</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">GHASH</h5>
+                    <p class="grey-text text-lighten-4">GHASH is a proprietry software from CratorWorks Corporation.<br> CratorWorks Corporation <br> India
+                        <br></p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Miscellenious</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">GHASH</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Terms & Privacy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Support Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright ">
+            <div class="container">
+                © 2017 CratorWorks Corporation
+
+                <a class="grey-text text-lighten-4 right" href="#!">CratorWorks Corporation</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
